@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="int">+
+    <input type="text" id="itn">=
+    <input type="text" id="cont">
+    <input type="button" value="提交" id="btn">
+
+</body>
+<script>
+    class Stra {
+        constructor(num, nua) {
+            this.a = document.getElementById('int');
+            this.b = document.getElementById('itn');
+            this.c = document.getElementById('cont');
+            this.btn = document.getElementById('btn');
+        }
+        count() {
+            this.btn.onclick = this.on();
+        }
+        on() {
+            console.log('1');
+            console.log('2');
+            this.c = this.a + this.b;
+        }
+    }
+    var op = new Stra();
+    // op.count();
+</script>
+
+</html>

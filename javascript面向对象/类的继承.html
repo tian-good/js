@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // class Father {
+        //     constructor() {
+
+        //     }
+        //     money() {
+        //         console.log(100);
+        //     }
+
+        // }
+        // //extends 继承类使用方法
+        // class Son extends Father {
+
+        // }
+        // var son = new Son();
+        // son.money();
+
+
+
+        class Father {
+            constructor(x, y) {
+                this.x = x;
+                this.y = y;
+
+            }
+            sum() {
+                console.log(this.x + this.y);
+            }
+        }
+        //super 调用父类关键字
+        class Son extends Father {
+            constructor(x, y) {
+                super(x, y); //调用父类中的构造函数
+            }
+        }
+        var son = new Son(1, 2);
+        var son1 = new Son(122, 2);
+        son.sum();
+        son1.sum();
+    </script>
+</body>
+
+</html>

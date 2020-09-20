@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //创建类 class 
+        class Star {
+            constructor(uname, age) {
+                this.nuame = uname;
+                this.age = age;
+            }
+            sing(song) { //创建一个对象
+                // console.log('我唱歌');
+                console.log(this.uname + song)
+            }
+        }
+        //利用类创建对象
+        var ldh = new Star('李德华', 1);
+        console.log(ldh);
+        ldh.sing('冰雨');
+        //constru
+    </script>
+</body>
+
+</html>
