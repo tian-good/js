@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //call方法
+        function fn(x, y) {
+            console.log('黑');
+            console.log(this);
+            console.log(x + y);
+        }
+        var o = {
+            name: 'andy'
+        };
+        //1、call()可以调用函数
+        fn.call();
+        //2、可以改变这个函数的this指向
+        //此时this指向了这个o这个对象
+        fn.call(o, 1, 2);
+    </script>
+</body>
+
+</html>
